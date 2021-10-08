@@ -4,7 +4,7 @@ import pandas as pd
 import guiwindow
 import sys
 
-
+#Comment
 def open_db(filename: str) -> Tuple[sql.Connection, sql.Cursor]:
     db_connection = sql.connect(filename)
     cursor = db_connection.cursor()
@@ -68,5 +68,6 @@ def main():
     ex = guiwindow.Window(conn, curs)
     ex.isHidden()
     sys.exit(app.exec_())
+
 
 main()
